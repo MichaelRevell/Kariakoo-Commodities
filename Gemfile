@@ -18,6 +18,9 @@ end
 
 group :test, :development do
   gem "rspec-rails", "~> 2.6"
+  gem 'ruby_gntp'
+  gem 'guard-rspec'
+  gem 'growl'
 end
 
 gem 'jquery-rails'
