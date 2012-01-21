@@ -1,4 +1,6 @@
 Kanakoo::Application.routes.draw do
+  resources :locations
+
   resources :commodities
 
   # The priority is based upon order of creation:
