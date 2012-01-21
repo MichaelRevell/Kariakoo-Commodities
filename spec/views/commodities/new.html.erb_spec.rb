@@ -3,8 +3,8 @@ require 'spec_helper'
 describe "commodities/new" do
   before(:each) do
     assign(:commodity, stub_model(Commodity,
-      :name => "",
-      :unit_id => ""
+      :name => "MyString",
+      :unit_id => 1
     ).as_new_record)
   end
 
