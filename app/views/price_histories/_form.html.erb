@@ -1,0 +1,49 @@
+<%= form_for(@price_history) do |f| %>
+  <% if @price_history.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@price_history.errors.count, "error") %> prohibited this price_history from being saved:</h2>
+
+      <ul>
+      <% @price_history.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :farmGateLow %><br />
+    <%= f.number_field :farmGateLow %>
+  </div>
+  <div class="field">
+    <%= f.label :farmGateHigh %><br />
+    <%= f.number_field :farmGateHigh %>
+  </div>
+  <div class="field">
+    <%= f.label :deliverHigh %><br />
+    <%= f.number_field :deliverHigh %>
+  </div>
+  <div class="field">
+    <%= f.label :deliverLow %><br />
+    <%= f.number_field :deliverLow %>
+  </div>
+  <div class="field">
+    <%= f.label :wholesaleHigh %><br />
+    <%= f.number_field :wholesaleHigh %>
+  </div>
+  <div class="field">
+    <%= f.label :wholesaleHigh %><br />
+    <%= f.number_field :wholesaleHigh %>
+  </div>
+  <div class="field">
+    <%= f.label :retailHigh %><br />
+    <%= f.number_field :retailHigh %>
+  </div>
+  <div class="field">
+    <%= f.label :retailLow %><br />
+    <%= f.number_field :retailLow %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

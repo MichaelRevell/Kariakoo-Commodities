@@ -1,7 +1,11 @@
 Kanakoo::Application.routes.draw do
+  resources :price_histories
+
   resources :commodities
 
   resources :locations
+
+  resources :units
   
   root :to => 'locations#index'
   

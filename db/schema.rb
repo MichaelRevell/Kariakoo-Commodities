@@ -11,8 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-
-ActiveRecord::Schema.define(:version => 20120128010518) do
+ActiveRecord::Schema.define(:version => 20120128025115) do
 
   create_table "commodities", :force => true do |t|
     t.string   "nameEnglish"
@@ -32,11 +31,18 @@ ActiveRecord::Schema.define(:version => 20120128010518) do
     t.datetime "updated_at"
   end
 
-  create_table "units", :force => true do |t|
-    t.string   "name"
-    t.string   "swahili"
+  create_table "price_histories", :force => true do |t|
+    t.integer  "farmGateLow"
+    t.integer  "farmGateHigh"
+    t.integer  "deliverHigh"
+    t.integer  "deliverLow"
+    t.integer  "wholesaleHigh"
+    t.integer  "retailHigh"
+    t.integer  "retailLow"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
-  
+
   create_table "prices", :force => true do |t|
     t.integer  "unitPriceLow"
     t.integer  "unitPriceHigh"
@@ -46,6 +52,11 @@ ActiveRecord::Schema.define(:version => 20120128010518) do
     t.integer  "wholesalePriceHigh"
     t.integer  "retailPriceLow"
     t.integer  "retailPriceHigh"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "units", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
