@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Farmgatelow:</b>
+  <%= @price_history.farmGateLow %>
+</p>
+
+<p>
+  <b>Farmgatehigh:</b>
+  <%= @price_history.farmGateHigh %>
+</p>
+
+<p>
+  <b>Deliverhigh:</b>
+  <%= @price_history.deliverHigh %>
+</p>
+
+<p>
+  <b>Deliverlow:</b>
+  <%= @price_history.deliverLow %>
+</p>
+
+<p>
+  <b>Wholesalehigh:</b>
+  <%= @price_history.wholesaleHigh %>
+</p>
+
+<p>
+  <b>Wholesalehigh:</b>
+  <%= @price_history.wholesaleHigh %>
+</p>
+
+<p>
+  <b>Retailhigh:</b>
+  <%= @price_history.retailHigh %>
+</p>
+
+<p>
+  <b>Retaillow:</b>
+  <%= @price_history.retailLow %>
+</p>
+
+
+<%= link_to 'Edit', edit_price_history_path(@price_history) %> |
+<%= link_to 'Back', price_histories_path %>
