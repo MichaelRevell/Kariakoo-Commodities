@@ -1,8 +1,10 @@
 Kanakoo::Application.routes.draw do
-  resources :locations
-
   resources :commodities
 
+  resources :locations
+  
+  root :to => 'locations#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
