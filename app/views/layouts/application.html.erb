@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kanakoo</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>Kanakoo</title>
+	<%= stylesheet_link_tag		 "application" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
+<div class="topbar">
+	<div class="topbar-inner">
+		<div class="container">
+			<h3>
+				<a href="/">Kariokee - The db you were waiting for!</a>
+			</h3>
+		</div>
+</div>
+</div>
 
 <%= yield %>
 
