@@ -11,12 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120128002327) do
+ActiveRecord::Schema.define(:version => 20120128023214) do
 
   create_table "commodities", :force => true do |t|
-    t.string   "nameEnglish"
-    t.string   "nameSwahili"
+    t.string   "englishName"
+    t.string   "swahiliName"
     t.string   "quality"
+    t.string   "farmgate_unit"
+    t.string   "delivered_unit"
+    t.string   "wholesale_unit"
+    t.string   "retail_unit"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

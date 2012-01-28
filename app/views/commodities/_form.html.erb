@@ -12,16 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :nameEnglish %><br />
-    <%= f.text_field :nameEnglish %>
+    <%= f.label :englishName %><br />
+    <%= f.text_field :englishName %>
   </div>
   <div class="field">
-    <%= f.label :nameSwahili %><br />
-    <%= f.text_field :nameSwahili %>
+    <%= f.label :swahiliName %><br />
+    <%= f.text_field :swahiliName %>
   </div>
   <div class="field">
     <%= f.label :quality %><br />
     <%= f.text_field :quality %>
+  </div>
+  <div class="field">
+    <%= f.label :farmgate_unit %><br />
+    <%= f.text_field :farmgate_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :delivered_unit %><br />
+    <%= f.text_field :delivered_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :wholesale_unit %><br />
+    <%= f.text_field :wholesale_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :retail_unit %><br />
+    <%= f.text_field :retail_unit %>
   </div>
   <div class="actions">
     <%= f.submit %>

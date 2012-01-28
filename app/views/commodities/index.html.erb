@@ -2,9 +2,13 @@
 
 <table>
   <tr>
-    <th>Nameenglish</th>
-    <th>Nameswahili</th>
+    <th>Englishname</th>
+    <th>Swahiliname</th>
     <th>Quality</th>
+    <th>Farmgate unit</th>
+    <th>Delivered unit</th>
+    <th>Wholesale unit</th>
+    <th>Retail unit</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,9 +16,13 @@
 
 <% @commodities.each do |commodity| %>
   <tr>
-    <td><%= commodity.nameEnglish %></td>
-    <td><%= commodity.nameSwahili %></td>
+    <td><%= commodity.englishName %></td>
+    <td><%= commodity.swahiliName %></td>
     <td><%= commodity.quality %></td>
+    <td><%= commodity.farmgate_unit %></td>
+    <td><%= commodity.delivered_unit %></td>
+    <td><%= commodity.wholesale_unit %></td>
+    <td><%= commodity.retail_unit %></td>
     <td><%= link_to 'Show', commodity %></td>
     <td><%= link_to 'Edit', edit_commodity_path(commodity) %></td>
     <td><%= link_to 'Destroy', commodity, confirm: 'Are you sure?', method: :delete %></td>
