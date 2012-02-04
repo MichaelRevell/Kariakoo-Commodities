@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#locations = location.create([{})
+Unit.create({:name=>"Tons"})
+Unit.create({:name=>"Kilos"})
+Unit.create({:name=>"Gallons"})
+Unit.create({:name=>"Cups"})
+Unit.create({:name=>"Kegs"})

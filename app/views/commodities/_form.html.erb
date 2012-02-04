@@ -37,7 +37,7 @@
   </div>
   <div class="field">
     <%= f.label :retail_unit %><br />
-    <%= f.text_field :retail_unit %>
+    <%= f.select :retail_unit, Unit.all.collect {|u| [ u.name, u.id] } %>
   </div>
   <div class="actions">
     <%= f.submit %>
