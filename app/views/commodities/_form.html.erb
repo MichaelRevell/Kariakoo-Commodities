@@ -25,15 +25,15 @@
   </div>
   <div class="field">
     <%= f.label :farmgate_unit %><br />
-    <%= f.text_field :farmgate_unit %>
+    <%= f.select :farmgate_unit, Unit.all.collect {|u| [ u.name, u.id] } %>
   </div>
   <div class="field">
     <%= f.label :delivered_unit %><br />
-    <%= f.text_field :delivered_unit %>
+    <%= f.select :delivered_unit, Unit.all.collect {|u| [ u.name, u.id] } %>
   </div>
   <div class="field">
     <%= f.label :wholesale_unit %><br />
-    <%= f.text_field :wholesale_unit %>
+    <%= f.select :wholesale_unit, Unit.all.collect {|u| [ u.name, u.id] } %>
   </div>
   <div class="field">
     <%= f.label :retail_unit %><br />
