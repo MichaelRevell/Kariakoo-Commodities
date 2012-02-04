@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title Kanakoo
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .topbar
+      .topbar-inner
+        .container
+          %h3
+            %a{:href => "#"} Kariokee - The db you were waiting for!
+          %ul.nav
+            %li= link_to 'Prices', price_histories_path
+            %li= link_to 'Locations', locations_path
+            %li= link_to 'Commodities', commodities_path
+            %li= link_to 'Units', units_path
+            %li.dropdown
+              %a.dropdown-toggle{:href => "#"} Admin
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "#"} Enter Prices
+                %li.divider
+    = yield
