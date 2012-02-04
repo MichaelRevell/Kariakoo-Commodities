@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(:version => 20120204011252) do
   end
 
   create_table "qualities", :force => true do |t|
-    t.string   "type"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

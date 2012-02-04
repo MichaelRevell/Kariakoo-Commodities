@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :quality %><br />
-    <%= f.text_field :quality %>
+	<%= f.select :quality, Quality.all.collect {|q| [ q.name, q.id] } %>
   </div>
   <div class="field">
     <%= f.label :farmgate_unit %><br />
