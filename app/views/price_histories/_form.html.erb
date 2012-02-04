@@ -12,13 +12,16 @@
   <% end %>
 
   <div class="field">
-	select commodity<br/>
+	<%= f.label :commodityId %><br/>
+	<%= f.select :commodityId, Commodity.all.collect {|c| [ c.name, c.id ] } %>
   </div>
   <div class="field">
-	date taken<br/>
+	<%= f.label "Date taken" %><br/>
+	<%= f.datetime_select :dateTaken %>
   </div>
   <div class="field">
-	quality<br/>
+	<%= f.label "Quality" %><br/>
+	<%= f.select :qualityId, Quality.all.collect {|q| [ q.name, q.id ] } %>
   <div>
   <div class="field">
     <%= f.label :farmGateLow %><br />
