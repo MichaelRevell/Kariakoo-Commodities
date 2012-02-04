@@ -2,14 +2,16 @@
 
 <table>
   <tr>
-    <th>Name</th>
+	<th>Name</th>
+    <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @units.each do |unit| %>
   <tr>
-    <td><%= link_to unit.name, unit %></td>
+	<td><%= unit.name %>
+    <td><%= link_to 'Show', unit %></td>
     <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
     <td><%= link_to 'Destroy', unit, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
