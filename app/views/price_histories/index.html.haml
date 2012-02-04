@@ -1,0 +1,29 @@
+%h1 Listing price_histories
+%table
+  %tr
+    %th Farmgatelow
+    %th Farmgatehigh
+    %th Deliverhigh
+    %th Deliverlow
+    %th Wholesalehigh
+    %th Wholesalehigh
+    %th Retailhigh
+    %th Retaillow
+    %th
+    %th
+    %th
+  - @price_histories.each do |price_history|
+    %tr
+      %td= price_history.farmGateLow
+      %td= price_history.farmGateHigh
+      %td= price_history.deliverHigh
+      %td= price_history.deliverLow
+      %td= price_history.wholesaleHigh
+      %td= price_history.wholesaleHigh
+      %td= price_history.retailHigh
+      %td= price_history.retailLow
+      %td= link_to 'Show', price_history
+      %td= link_to 'Edit', edit_price_history_path(price_history)
+      %td= link_to 'Destroy', price_history, confirm: 'Are you sure?', method: :delete
+%br/
+= link_to 'New Price history', new_price_history_path
