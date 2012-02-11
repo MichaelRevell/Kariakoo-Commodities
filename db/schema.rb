@@ -36,6 +36,9 @@ ActiveRecord::Schema.define(:version => 20120204023025) do
   end
 
   create_table "price_histories", :force => true do |t|
+    t.integer  "commodityId"
+    t.datetime "dateTaken"
+    t.integer  "qualityId"
     t.integer  "farmGateLow"
     t.integer  "farmGateHigh"
     t.integer  "deliverHigh"

@@ -20,8 +20,8 @@
     <%= f.text_field :swahiliName %>
   </div>
   <div class="field">
-    <%= f.label :quality %><br />
-	<%= f.select :quality, Quality.all.collect {|q| [ q.name, q.id] } %>
+    <%= f.label :qualityId %><br />
+	<%= f.select :qualityId, Quality.all.collect {|q| [ q.name, q.id] } %>
   </div>
   <div class="field">
     <%= f.label :farmgate_unit %><br />
