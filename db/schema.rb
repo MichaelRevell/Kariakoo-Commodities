@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120204011252) do
+ActiveRecord::Schema.define(:version => 20120204023025) do
 
   create_table "commodities", :force => true do |t|
     t.string   "englishName"
