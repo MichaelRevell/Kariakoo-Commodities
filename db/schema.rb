@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(:version => 20120204023025) do
     t.string   "delivered_unit"
     t.string   "wholesale_unit"
     t.string   "retail_unit"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "locations", :force => true do |t|
@@ -31,14 +31,11 @@ ActiveRecord::Schema.define(:version => 20120204023025) do
     t.string   "district"
     t.string   "ward"
     t.string   "town"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "price_histories", :force => true do |t|
-    t.integer  "commodityId"
-    t.datetime "dateTaken"
-    t.integer  "qualityId"
     t.integer  "farmGateLow"
     t.integer  "farmGateHigh"
     t.integer  "deliverHigh"
@@ -46,8 +43,8 @@ ActiveRecord::Schema.define(:version => 20120204023025) do
     t.integer  "wholesaleHigh"
     t.integer  "retailHigh"
     t.integer  "retailLow"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "prices", :force => true do |t|
@@ -59,19 +56,19 @@ ActiveRecord::Schema.define(:version => 20120204023025) do
     t.integer  "wholesalePriceHigh"
     t.integer  "retailPriceLow"
     t.integer  "retailPriceHigh"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "qualities", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "units", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "name"
   end
 
