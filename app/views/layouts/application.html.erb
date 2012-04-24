@@ -10,19 +10,18 @@
 <div class="topbar">
     <div class="topbar-inner">
         <div class="container">
-          <h3><a href="#">Kariakoo - The db you were waiting for!</a></h3>
+          <h3><a href="#">Kariakoo - The database you were waiting for!</a></h3>
+	  <br/>
           <ul class="nav">
-			    <li><%= link_to 'Prices', price_histories_path %></li>
-			    <li><%= link_to 'Locations', locations_path %></li>
-			    <li><%= link_to 'Commodities', commodities_path %></li>
-			    <li><%= link_to 'Units', units_path %></li>		         
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle">Admin</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Enter Prices</a></li>
-                <li class="divider"></li>	    
-              </ul>
-            </li>
+	    <%= link_to 'Prices', price_histories_path %>&nbsp;|&nbsp;
+	    <%= link_to 'Locations', locations_path %>&nbsp;|&nbsp;
+	    <%= link_to 'Commodities', commodities_path %>&nbsp;|&nbsp;
+	    <%= link_to 'Units', units_path %>&nbsp;|&nbsp;
+            <a href="#" class="dropdown-toggle">Admin</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Enter Prices</a></li>
+              <li class="divider"></li>	    
+            </ul>
           </ul>
         </div>
     </div>

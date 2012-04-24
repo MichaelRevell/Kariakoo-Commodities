@@ -38,6 +38,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'rails-footnotes', '>= 3.7.5.rc4', :group => :development
+
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
